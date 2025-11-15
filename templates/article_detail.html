@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<section class="article-detail" style="padding:40px 20px; max-width:900px; margin:0 auto;">
+    <div class="article-header" style="margin-bottom:30px;">
+        <span class="category-tag detail-tag" style="display:inline-block; background-color:#e6f2e6; color:#1e8e3e; padding:5px 10px; border-radius:5px; font-size:0.9em;">{{ article.category }}</span>
+        <h1 style="margin-top:10px; color:#1e8e3e;">{{ article.title }}</h1>
+        <small style="color:#555;">Published on: {{ article.date_posted.strftime('%d %B, %Y') }}</small>
+    </div>
+
+    <div class="article-body">
+        <img src="{{ url_for('static', filename='images/farming.jpg') }}" alt="Farming Landscape" class="article-image" style="width:100%; height:auto; border-radius:8px; margin-bottom:20px; transition: transform 0.3s;" loading="lazy">
+
+        <p class="introduction" style="font-size:1.1em; line-height:1.6; color:#333;">
+            The Agri-Naija Centre content focuses on the business aspect of farming.
+            This guide will cover <strong>Cost-Benefit Analysis</strong>,
+            <strong>Market Demand</strong>, and <strong>Optimizing Yields</strong>
+            for this specific crop/practice.
+        </p>
+
+        <div class="full-content" style="line-height:1.6; color:#333; margin-top:20px;">
+            {{ article.content | safe }}
+        </div>
+
+        <hr style="margin:40px 0; border-color:#ddd;">
+
+        <div class="call-to-action" style="text-align:center; margin-top:30px;">
+            <h3 style="color:#1e8e3e;">Ready to start your venture?</h3>
+            <p>Use the information here to plan your investment.
+               If you have further questions, feel free to contact our experts.</p>
+            <a href="{{ url_for('contact') }}" class="btn-primary" style="display:inline-block; background-color:#1e8e3e; color:white; padding:12px 25px; border-radius:5px; text-decoration:none; margin-top:10px; transition: background 0.3s, transform 0.2s;">Ask a Question</a>
+        </div>
+    </div>
+
+    <div class="back-link" style="margin-top:40px;">
+        <a href="{{ url_for('article_list') }}" style="text-decoration:none; color:#1e8e3e; transition: color 0.3s;">← Back to All Guides</a>
+    </div>
+</section>
+
+<style>
+.article-image:hover {
+    transform: scale(1.02);
+}
+
+.btn-primary:hover {
+    background-color:#166c2d;
+    transform: translateY(-2px);
+}
+
+.back-link a:hover {
+    color:#166c2d;
+}
+</style>
+{% endblock %}

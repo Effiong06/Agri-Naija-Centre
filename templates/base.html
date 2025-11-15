@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <title>{% block title %}Agri-Naija Centre{% endblock %}</title>
+    <meta name="description" content="Agri-Naija Centre provides practical, business-focused agriculture knowledge for Nigerian farmers, entrepreneurs, and investors.">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Agri-Naija Centre">
+    <meta property="og:description" content="Empowering Nigerian farmers with accessible agricultural business knowledge.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    <meta property="og:image" content="{{ url_for('static', filename='img/preview.png', _external=True) }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+
+    <!-- Preload CSS for Faster Rendering -->
+    <link rel="preload" href="{{ url_for('static', filename='css/style.css') }}" as="style">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Optional Google Fonts (uncomment if needed)
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    -->
+
+    <!-- Main JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+
+    <!-- Global CSS for lazy-loading images -->
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Agri-Naija Centre</a>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('article_list') }}">Articles</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Agri-Naija Centre. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

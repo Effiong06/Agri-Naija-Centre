@@ -1,0 +1,234 @@
+/* =======================
+   BASE STYLES
+======================= */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f9f7;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+    background-color: #4a7c59;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* =======================
+   CONTENT WRAPPER
+======================= */
+.content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page-title {
+    margin-bottom: 1rem;
+    color: #1e8e3e; /* unified heading color */
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero-section {
+    padding: 80px 20px;
+    background-color: #1e8e3e;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1e8e3e;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #155d2c;
+}
+
+/* =======================
+   ARTICLE CARDS
+======================= */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.article-card,
+.featured-card {
+    background-color: #eaf4ea;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover,
+.featured-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.article-card h2 a,
+.featured-card h3 a {
+    color: #333;
+}
+
+.article-card h2 a:hover,
+.featured-card h3 a:hover {
+    color: #2a5d3d;
+}
+
+.article-card p,
+.featured-excerpt {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.category {
+    display: inline-block;
+    background-color: #a0d468;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* =======================
+   LATEST ARTICLES
+======================= */
+.latest-articles {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.latest-articles h2 {
+    color: #1e8e3e;
+    margin-bottom: 20px;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+.article-item {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-item a {
+    color: #1e8e3e;
+    font-weight: 600;
+}
+
+.article-item a:hover {
+    color: #155d2c;
+}
+
+.article-date {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.empty-msg {
+    color: #444;
+}
+
+/* =======================
+   PAGINATION
+======================= */
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0.5rem 0.8rem;
+    background-color: #4a7c59;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #3e6a4c;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a7c59;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 600px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}

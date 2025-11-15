@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    body {
+        background: #f0f4f8;
+    }
+    .login-card {
+        max-width: 430px;
+        margin: 80px auto;
+        background: #fff;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    .login-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2d6a4f;
+    }
+    .form-control {
+        padding: 12px;
+        border-radius: 10px;
+    }
+    .btn-login {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        background: #2d6a4f;
+        color: white;
+        font-weight: 600;
+    }
+    .btn-login:hover {
+        background: #225b40;
+    }
+    .flash-message {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 12px;
+        text-align: center;
+        font-weight: 500;
+    }
+</style>
+
+<div class="login-card">
+    <h2 class="login-title">Administrator Login</h2>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash-message alert alert-{{ category }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('login') }}">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input 
+                type="text" 
+                name="username" 
+                id="username" 
+                class="form-control" 
+                placeholder="Enter username"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input 
+                type="password" 
+                name="password" 
+                id="password" 
+                class="form-control" 
+                placeholder="Enter password"
+                required>
+        </div>
+
+        <button type="submit" class="btn btn-login">Log In</button>
+    </form>
+</div>
+
+{% endblock %}
