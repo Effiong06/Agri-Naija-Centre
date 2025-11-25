@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // 1️⃣ Contact Form Validation
+    // Contact Form Validation
     const contactForm = document.querySelector("#contact-form");
     if (contactForm) {
         contactForm.addEventListener("submit", (e) => {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2️⃣ Live Search Filter for Articles
+    // Live Search Filter for Articles
     const searchInput = document.querySelector(".search-filter-form input[name='search']");
     const articleCards = document.querySelectorAll(".article-card");
 
