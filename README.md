@@ -55,12 +55,12 @@ git clone https://github.com/Effiong06/Agri-Naija-Centre.git;
 cd Agri-Naija-Centre
 
 3. Create a Virtual Environment
-python3 -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
+ - python3 -m venv venv;
+ - source venv/bin/activate      # Linux/Mac
+ - venv\Scripts\activate         # Windows
 
 4. Install Requirements
-pip install -r requirements.txt
+ - pip install -r requirements.txt
 
 5. Configure Environment Variables
 
@@ -85,7 +85,7 @@ password: supersecretpassword
 Change this immediately.
 
 6. Run the App
-python app.py
+ - python app.py
 
 
 Your local app will run at:
@@ -105,8 +105,8 @@ Make sure your latest code is committed and pushed.
 2. Visit Render.com → Create New Web Service
 3. Configure Build Settings
 Setting	Value
-Build Command	pip install -r requirements.txt
-Start Command	gunicorn app:app
+Build Command	 - pip install -r requirements.txt
+Start Command	 - gunicorn app:app
 Environment	Python 3
 4. Add Environment Variables
 
