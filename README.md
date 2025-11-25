@@ -20,8 +20,8 @@ Admins can log in to add, edit, and delete articles.
 ***DEMO***
 _____________________________________________
 
-{A link to a demo video (explaining and displaying the contents of the website)} :- [[https://drive.google.com/file/d/14jMQEvouPgDsMIbhzTP3G8OB94-ay0m3/view?usp=sharing]
-(https://drive.google.com/file/d/14jMQEvouPgDsMIbhzTP3G8OB94-ay0m3/view?usp=sharing)] (url)
+{A link to a demo video (explaining and displaying the contents of the website)} :- 
+[(https://drive.google.com/file/d/14jMQEvouPgDsMIbhzTP3G8OB94-ay0m3/view?usp=sharing)] (url)
 
 
 
