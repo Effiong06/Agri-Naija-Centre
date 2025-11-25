@@ -149,11 +149,11 @@ Created automatically on first run:
 
 Username:- admin; Password:- supersecretpassword
 
-Contact Form
+**Contact Form**
 
 Uses Gmail SMTP.
 If using Gmail, enable App Passwords and use that as EMAIL_PASS.
 
- License
+**License**
 
 This project is for educational use.
