@@ -1,6 +1,7 @@
 ***Agri-Naija Centre***
 ______________________________________________
 
+
 A web application that provides business-oriented agricultural knowledge to aspiring farmers in Nigeria.
 
 ***About the Project***
@@ -9,6 +10,7 @@ ______________________________________________
 Agri-Naija Centre is designed to provide accessible, localized agricultural business information.
 Users can read guides, search for content, filter by category, and contact administrators.
 Admins can log in to add, edit, and delete articles.
+
 
 
 ***DEMO***
@@ -35,24 +37,28 @@ PostgreSQL (Render)
 Gunicorn
 Render Web Service (deployment)
 
+
+
 ***How to Set Up the Project (Local Installation)***
 ___________________________________________________________
 
 Follow these steps EXACTLY to run the project locally.
 
-1. Clone the Repository
-git clone https://github.com/Effiong06/Agri-Naija-Centre.git
+1. Clone the Repository;
+   
+git clone https://github.com/Effiong06/Agri-Naija-Centre.git;
+
 cd Agri-Naija-Centre
 
-2. Create a Virtual Environment
+3. Create a Virtual Environment
 python3 -m venv venv
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
 
-3. Install Requirements
+4. Install Requirements
 pip install -r requirements.txt
 
-4. Configure Environment Variables
+5. Configure Environment Variables
 
 Create a .env file in the project root and add:
 
@@ -83,6 +89,8 @@ Your local app will run at:
 http://127.0.0.1:5000
 
 
+
+
 ***Deployment on Render (Step-By-Step)***
 ________________________________________________
 
@@ -108,6 +116,8 @@ EMAIL_PASS=
 
 Render builds your app and gives you a public URL.
 
+
+
 ***Project Structure***
 ___________________________________________
 
@@ -131,12 +141,13 @@ project/
 │── venv/
 
 
+
+
 **Default Admin Account**
 
 Created automatically on first run:
 
 Username	Password
-
 admin	supersecretpassword
 📧 Contact Form
 
