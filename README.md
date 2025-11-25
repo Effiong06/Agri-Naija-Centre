@@ -24,18 +24,18 @@ _____________________________________________
 ***Technologies Used***
 ____________________________________________
 
-Python 3
-Flask
-Flask-Admin
-Flask-Login
-Flask-Mail
-Flask-SQLAlchemy
-Flask-Caching
-HTML5 + CSS3 + JS
-SQLite (local)
-PostgreSQL (Render)
-Gunicorn
-Render Web Service (deployment)
+ - Python 3
+ - Flask
+ - Flask-Admin
+ - Flask-Login
+ - Flask-Mail
+ - Flask-SQLAlchemy
+ - Flask-Caching
+ - HTML5 + CSS3 + JS
+ - SQLite (local)
+ - PostgreSQL (Render)
+ - Gunicorn
+ - Render Web Service (deployment)
 
 
 
@@ -121,24 +121,24 @@ Render builds your app and gives you a public URL.
 ***Project Structure***
 ___________________________________________
 
-project/
-│── app.py
-│── requirements.txt
-│── static/
-│   ├── css/
-│   └── js/
-│── templates/
-│   ├── base.html
-│   ├── index.html
-│   ├── article_list.html
-│   ├── article_detail.html
-│   ├── contact.html
-│   └── admin/
-│       ├── admin_login.html
-│       └── custom_admin_index.html
-│── instance/
-│   └── site.db
-│── venv/
+project/: - 
+           - app.py
+           - requirements.txt
+           - static/:-
+                        - css/
+                        - js/
+           - templates/:-
+                        - base.html
+                        - index.html
+                        - article_list.html
+                        - article_detail.html
+                        - contact.html
+                        - admin/:- 
+                                 - admin_login.html
+                                 - custom_admin_index.html
+           - instance/:-
+                        - site.db
+           - venv/
 
 
 
@@ -147,13 +147,13 @@ project/
 
 Created automatically on first run:
 
-Username	Password
-admin	supersecretpassword
-📧 Contact Form
+Username:- admin; Password:- supersecretpassword
+
+Contact Form
 
 Uses Gmail SMTP.
 If using Gmail, enable App Passwords and use that as EMAIL_PASS.
 
-📜 License
+ License
 
 This project is for educational use.
