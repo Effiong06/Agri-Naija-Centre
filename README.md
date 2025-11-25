@@ -68,9 +68,9 @@ EMAIL_PASS=your_email_password_or_app_password
 
 5. Initialize the Database
 flask shell
->>> from app import db
->>> db.create_all()
->>> exit()
+ - from app import db
+ - db.create_all()
+ -  exit()
 
 
 An initial admin user is automatically created:
@@ -121,24 +121,24 @@ Render builds your app and gives you a public URL.
 ***Project Structure***
 ___________________________________________
 
-project/: - 
-           - app.py
-           - requirements.txt
-           - static/:-
-                        - css/
-                        - js/
-           - templates/:-
-                        - base.html
-                        - index.html
-                        - article_list.html
-                        - article_detail.html
-                        - contact.html
-                        - admin/:- 
-                                 - admin_login.html
-                                 - custom_admin_index.html
-           - instance/:-
-                        - site.db
-           - venv/
+ - project/: - 
+-              - app.py
+-              - requirements.txt
+-              - static/:-
+-                          - css/
+-                          - js/
+-              - templates/:-
+-                             - base.html
+-                             - index.html
+-                             - article_list.html
+-                             - article_detail.html
+-                             - contact.html
+-                             - admin/:- 
+-                                       - admin_login.html
+-                                       - custom_admin_index.html
+-               - instance/:-
+-                             - site.db
+-               - venv/
 
 
 
